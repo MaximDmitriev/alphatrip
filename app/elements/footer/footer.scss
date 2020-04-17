@@ -1,0 +1,20 @@
+.footer {
+  padding: 23px 0;
+  background-color: #2d2d2d;
+  &__wrap {
+    align-items: center;
+  }
+  &__logo-svg {
+    fill: #7c7c7c;
+  }
+  &__copyrights {
+    margin-top: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    color: $font-color-light;
+    text-transform: uppercase;
+    @media (max-width: 509px) {
+      font-size: 10px;
+    }
+  }
+}

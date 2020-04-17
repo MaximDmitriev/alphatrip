@@ -1,0 +1,283 @@
+.tours.section
+  ._wrap.wrap
+    ._filter
+      ._filter-title.base-title Твои поездки
+      ._filter-radio-wrap
+        label(for="allTrips")
+          input(type="radio" name="trip" checked)#allTrips.tours__radio
+          ._radio-label
+            ._radio-text все
+        label(for="plannedTrips")
+          input(type="radio" name="trip")#plannedTrips.tours__radio
+          ._radio-label
+            +svg('plane', 'tours__radio-svg')
+            ._radio-text планируемые
+        label(for="doneTrips")
+          input(type="radio" name="trip")#doneTrips.tours__radio
+          ._radio-label
+            +svg('checked', 'tours__radio-svg')
+            ._radio-text совершенные
+      button(type='submit')._btn.btn
+         +svg('reference', 'reference-svg')
+         | составить маршрут вручную
+    ._new-trip
+      +svg('star-trip', 'star-trip-icon')
+      | новая поездка
+
+    ._trip.-planned.-castom
+      ._info-trip
+        ._info-trip-text Кастомная поездка 13245
+        ._info-trip-link
+          ._text Ссылка для клиента:
+          ._link(id="info-trip") alphatrip.ru/1234567890
+          button(type='submit' data-clipboard-target="#info-trip")._btn.btn-link скопировать
+
+      ._col-upper
+        ._trip-icon
+          +svg('plane', 'tours__trip-svg')
+        ._trip-route
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев  —  13 фев
+              ._trip-checkpoint-name будапешт
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name венеция
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-finish
+              +svg('finish')
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+        ._trip-total
+          ._trip-total-item
+            ._trip-total-label время
+            ._trip-total-value 10 дней
+          ._trip-total-item
+            ._trip-total-label бюджет
+            ._trip-total-value 50 000 р
+        
+      ._col-down
+        include ../castom-trip/castom-trip
+        .map-castom
+          ._wrap.wrap
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13573408.802870477!2d17.115650286683213!3d45.53695926077894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2ses!4v1566510383624!5m2!1sru!2ses" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+      
+
+    ._trip.-planned
+      ._col-upper
+        ._trip-icon
+          +svg('plane', 'tours__trip-svg')
+        ._trip-route
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев  —  13 фев
+              ._trip-checkpoint-name будапешт
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name венеция
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-finish
+              +svg('finish')
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+        ._trip-total
+          ._trip-total-item
+            ._trip-total-label время
+            ._trip-total-value 10 дней
+          ._trip-total-item
+            ._trip-total-label бюджет
+            ._trip-total-value 50 000 р
+      ._col-down
+        include ../tickets/tickets
+        include ../budget/budget
+        include ../housing/housing
+        include ../sight/sight
+        include ../alimentation/alimentation
+        include ../transport/transport
+        include ../different-things/different-things
+        include ../advice/advice
+      ._trip-footer
+        ._follow 
+          a(href="#", title="title")._follow-link
+            +svg('ig', 'footer-svg')
+          a(href="#", title="title")._follow-link
+            +svg('vk', 'footer-svg')
+          a(href="#", title="title")._follow-link
+            +svg('fb', 'footer-svg')
+        ._save
+          +svg('pdf')
+          | сохранить поездку в pdf
+
+    ._trip.-planned
+      ._col-upper
+        ._trip-icon
+          +svg('plane', 'tours__trip-svg')
+        ._trip-route
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев  —  13 фев
+              ._trip-checkpoint-name рим
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name пекин
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name токио
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name венеция
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name пекин
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name венеция
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-finish
+              +svg('finish')
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+        ._trip-total
+          ._trip-total-item
+            ._trip-total-label время
+            ._trip-total-value 10 дней
+          ._trip-total-item
+            ._trip-total-label бюджет
+            ._trip-total-value 50 000 р
+      ._col-down
+        include ../tickets/tickets
+        include ../budget/budget
+        include ../sight/sight
+        include ../alimentation/alimentation
+        include ../transport/transport
+        include ../different-things/different-things
+        include ../advice/advice
+      ._trip-footer
+        ._follow 
+          a(href="#", title="title")._follow-link
+            +svg('ig', 'footer-svg')
+          a(href="#", title="title")._follow-link
+            +svg('vk', 'footer-svg')
+          a(href="#", title="title")._follow-link
+            +svg('fb', 'footer-svg')
+        ._save
+          +svg('pdf')
+          | сохранить поездку в pdf
+
+    ._trip.-done
+      .tickets__close свернуть
+        +svg('up', 'tickets__close-svg')
+      ._col-upper
+        ._trip-icon
+          +svg('checked', 'tours__trip-svg')
+        ._trip-route
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint(data-role="show-photo")
+              ._trip-checkpoint-date 10 фев  —  13 фев
+              ._trip-checkpoint-name будапешт
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-checkpoint(data-role="show-photo")
+              ._trip-checkpoint-date 13 фев  —  15 фев
+              ._trip-checkpoint-name венеция
+            ._trip-next
+              +svg('arrow-next')
+          ._trip-checkpoint-wrap
+            ._trip-finish
+              +svg('finish')
+            ._trip-checkpoint
+              ._trip-checkpoint-date 10 фев
+              ._trip-checkpoint-name москва
+          ._trip-checkpoint-gallery
+              img(src="img/trip-1.jpg", data-modal="#tours-trip-gallery" alt="alt")
+              img(src="img/trip-2.jpg", data-modal="#tours-trip-gallery" alt="alt")
+              img(src="img/trip-3.jpg", data-modal="#tours-trip-gallery" alt="alt")
+              img(src="img/trip-4.jpg", data-modal="#tours-trip-gallery" alt="alt")
+              img(src="img/trip-5.jpg", data-modal="#tours-trip-gallery" alt="alt")
+              img(src="img/trip-6.jpg", data-modal="#tours-trip-gallery" alt="alt")
+        ._trip-total
+          ._trip-total-item
+            ._trip-total-label время
+            ._trip-total-value 10 дней
+          ._trip-total-item
+            ._trip-total-label бюджет
+            ._trip-total-value 50 000 р
+      ._col-down
+        include ../map/map
+        include ../budget/budget
+        include ../sight/sight
+        include ../alimentation/alimentation
+        include ../transport/transport
+        include ../different-things/different-things
+        include ../advice/advice
+      ._trip-footer
+        ._follow 
+          a(href="#", title="title")._follow-link
+            +svg('ig', 'footer-svg')
+          a(href="#", title="title")._follow-link
+            +svg('vk', 'footer-svg')
+          a(href="#", title="title")._follow-link
+            +svg('fb', 'footer-svg')
+        ._save
+          +svg('pdf')
+          | сохранить поездку в pdf
+          
+    ._form-trip
+      +svg('pdf', 'pdf-icon')
+      | сохранить поездку в pdf

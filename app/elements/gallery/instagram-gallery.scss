@@ -1,0 +1,47 @@
+#instagramGallery {
+  .gallery {
+    padding: 20px 20px 50px 20px;
+
+    @media(max-width: 576px) {
+      padding: 0 0 30px 0;
+    }
+
+    &__text {
+      max-width: 700px;
+      width: 100%;
+      color: #2d2d2d;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      margin: 45px 0;
+
+
+      @media(max-width: 576px) {
+        margin: 15px 0 0 0;
+        padding: 0 15px;
+      }
+    }
+
+    &__link {
+      color: #1390e8;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+
+  }
+
+  .gallery__active-slide {
+    .gallery__photo {
+      border-color: #000 !important
+    }
+  }
+
+  [data-slider="instagram-thumbs"] {
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+}

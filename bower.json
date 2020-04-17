@@ -1,0 +1,25 @@
+{
+  "name": "gulp builder",
+  "description": "Bower components for gulp builder",
+  "main": "index.js",
+  "authors": [
+    "kprod"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^7.0.0",
+    "jquery": "^3.2.1",
+    "swiper": "^4.5.0",
+    "ion.rangeSlider": "ion.rangeslider#^2.3.0",
+    "kmodal": "^1.5.0",
+    "clipboard": "^2.0.4"
+  }
+}

@@ -1,0 +1,56 @@
+header.header.section
+  ._wrap.wrap
+    ._logo
+      +svg('logo')
+    ._options
+      ._options-item
+        ._options-dropdown
+          ._dropdown-item
+            +svg('rub', 'header__dropdown-icon')
+            ._dropdown-text рубли
+          ._dropdown-item
+            +svg('euro', 'header__dropdown-icon')
+            ._dropdown-text евро
+          ._dropdown-item
+            +svg('dollar', 'header__dropdown-icon')
+            ._dropdown-text долл.
+        ._options-icon
+          ._options-icon-wrap
+            +svg('rub')
+        ._options-text рубли
+        +svg('arrow-down')
+      ._options-item
+        ._options-dropdown
+          ._dropdown-item
+            +icon('rus', 'header__dropdown-icon')
+            ._dropdown-text русский
+          ._dropdown-item
+            +icon('eng', 'header__dropdown-icon')
+            ._dropdown-text english
+        ._options-icon
+          +icon('rus')
+        ._options-text русский
+        +svg('arrow-down')
+      ._options-item
+        ._options-dropdown
+          ._dropdown-item.-noselect
+            img(src="img/user-icon.png", alt="user")._user-icon.-dropdown
+            ._dropdown-text Иван Петров
+          ._dropdown-social
+            ._social-text Связать аккаунт<br>для подгрузки фото
+            ._social-wrap
+              a(href="#")._social-icon.-ig
+                +svg('ig')
+              a(href="#")._social-icon.-vk
+                +svg('vk')
+              a(href="#")._social-icon.-fb
+                +svg('fb')
+          ._dropdown-item.-user
+            ._dropdown-text Изменить пароль
+          ._dropdown-item.-user
+            +svg('off', 'header__dropdown-icon')
+            ._dropdown-text выйти
+        ._options-icon
+          img(src="img/user-icon.png", alt="user")._user-icon
+        ._options-text Иван Петров
+        +svg('arrow-down')

@@ -1,0 +1,87 @@
+.modal#sightsGallery
+    ._dialog
+        ._content
+            .gallery
+                ._close(data-role="modal-close")
+                    +svg('cross')
+                ._hotel-name Площадь сан-марко
+                .swiper-container(data-slider="sights-big")
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                ._thumbs
+                    ._nav-btn.-prev(data-nav="prev-slide")
+                        +svg('slider-prev')
+                    .swiper-container(data-slider="sights-thumbs")
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="img/hotel-thumb-1.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-2.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-3.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-4.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-5.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-1.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-2.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-3.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-4.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-5.jpg").gallery__photo
+                    ._nav-btn.-next(data-nav="next-slide")
+                        +svg('slider-next')
+                ._sights-descr
+                    ._sights-descr-info
+                        a(href="#", title="title")._sights-descr-link basilicasanmarco.it
+                        ._opening-hours
+                            ._sights-descr-text График работы:  
+                            ._sights-descr-num вт-сб 10:00-17:00
+                        ._tickets
+                            ._ticket
+                                ._sights-descr-text Взрослый билет:  
+                                ._sights-descr-price
+                                    ._sights-descr-num 50
+                                    ._sights-descr-currency р
+                            ._ticket
+                                ._sights-descr-text Детский билет:   
+                                ._sights-descr-price
+                                    ._sights-descr-num 30
+                                    ._sights-descr-currency р
+                    ._sights-descr-basic
+                        | Главная городская площадь Венеции, Италия.
+                        | Логически состоит из двух частей: Пьяцетты — площадки от 
+                        | Гранд-канала до колокольни, и непосредственно Пьяццы
+                        | (площади).
+                ._customer-feedback
+                    ._customer-feedback-title стоит ли посетить это место?
+                    ._customer-feedback-likes
+                        ._num-likes
+                            +svg('likes', 'likes-svg') 
+                            | 36
+                        ._num-deslikes
+                            +svg('deslikes', 'deslikes-svg')
+                            | 70

@@ -1,0 +1,29 @@
+doctype html
+html
+    include ../elements/head/head
+    +head('Alphatreep - личный кабинет', '', '')
+    body
+
+        include ../elements/header/header
+        include ../elements/user/user
+        include ../elements/travel-options/travel-options
+        include ../elements/tours/tours
+        include ../elements/footer/footer
+        include ../elements/gallery/hotel-gallery
+        include ../elements/gallery/sights-gallery
+        include ../elements/gallery/instagram-gallery
+        include ../elements/gallery/instagram
+        include ../elements/gallery/tours-trip-gallery
+        .map-visited-city.-empty
+            ._icon
+                +svg('map-marker')
+            ._name Москва
+            ._photos
+                ._photos-img
+                ._photos-img
+                ._photos-img
+                img(src="img/visited-city.jpg")._photos-img
+
+        script(src="js/libs.min.js")
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUgKy4B8rBMuO-AybcShy8vu5oipR3WuI")
+        script(src="js/custom.js")

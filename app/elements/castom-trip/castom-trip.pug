@@ -1,0 +1,93 @@
+.castom-trip.tickets
+    ._tickets-close.tickets__close свернуть
+        +svg('up', 'tickets__close-svg')
+    ._wrap.tickets__wrap
+        ._row.tickets__row
+            ._row-icon.tickets__row-icon.-start
+                +svg('plane', 'tours__trip-svg')
+            ._point.tickets__point.-start
+              ._point-date 10 фев
+              ._point-name 
+                ._point-name-city москва
+                +svg('point-arrow', 'castom-arrow')
+                ._point-name-city будапешт
+              ._ticket-info-view
+                +icon('ryanair-big')
+                ._ticket-info-name Иван Петров
+            ._flight-data
+              ._departure
+                ._departure-city DME
+                ._departure-date 10 фев 17:43
+              ._info
+                ._info-time 20ч 48м
+                ._info-arrow
+                  ._departure-line
+                  ._circle
+                  +svg('departure-arrow')
+                ._text Пересадка в ABC, Имягорода. <br>
+                  | Ждем 12 ч 37 м
+                ._icons
+                  +svg('personal-thing')
+                  +svg('hand-baggage', 'hand-baggage-icon')
+                  +svg('bag-with')
+              ._departure
+                ._departure-city bud
+                ._departure-date 10 фев 17:43
+            ._precio-info
+              +icon('aviasales')
+              ._precio
+                ._precio-money &#8381;
+                ._precio-num 25500
+            
+        ._row.tickets__row
+            ._row-icon.tickets__row-icon.-start
+                +svg('plane', 'tours__trip-svg')
+            ._point.tickets__point.-start
+              ._point-date 10 фев
+              ._point-name 
+                ._point-name-city москва
+                +svg('point-arrow', 'castom-arrow')
+                ._point-name-city будапешт
+              ._different-airports
+                +svg('connexion', 'connexion-svg')
+                ._different-airports-descr Будапешт. <span class="castom-trip__abr"> ABC-DEF </span> <br>
+                  | Разные аэропорты прилета и вылета
+              
+              ._ticket-info-view
+                +icon('ryanair-big')
+                ._ticket-info-name Иван Петров
+            ._flight-data
+              ._departure
+                ._departure-city DME
+                ._departure-date 10 фев 17:43
+              ._info
+                ._info-time 20ч 48м
+                ._info-arrow
+                  ._departure-line
+                  ._circle
+                  +svg('departure-arrow')
+                ._text ABC
+                ._icons
+                  +svg('personal-thing')
+                  +svg('hand-baggage', 'hand-baggage-icon')
+                  +svg('bag-with')
+              ._departure
+                ._departure-city bud
+                ._departure-date 10 фев 17:43
+            ._precio-info
+              +icon('aviasales')
+              ._precio
+                ._precio-money &#8381;
+                ._precio-num 25500
+        ._row.-finish.tickets__row
+            ._add-link
+              ._add +
+              input(type="text" placeholder="Вставьте ссылку на билет")._input
+              button(type='submit')._btn
+                +svg('point-arrow', 'arrow-btn')
+            ._finish
+              +svg('check','check-svg')
+              | закончить
+  
+
+

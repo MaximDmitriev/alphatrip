@@ -1,0 +1,488 @@
+.castom-trip {
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  background: #ffffff;
+  border-radius: 7px 7px 0 0;
+
+  &__wrap {
+    padding: 0 29px;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    &_finish {
+      align-items: center;
+      justify-content: space-between;
+
+      @media(max-width: 1050px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+    &:not(:last-child) {
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        height: 2px;
+        width: 97%;
+        max-width: 906px;
+        background: #ececec;
+
+        @media(max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 1054px) {
+      flex-direction: column;
+    }
+  }
+
+  &__row-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+
+    @media (max-width: 1054px) {
+      margin-left: 30px;
+      margin-top: 10px;
+      max-width: 644px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 380px;
+    }
+
+    @media (max-width: 509px) {
+      width: 94%;
+    }
+  }
+
+  &__different-airports {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+  }
+
+  &__different-airports-descr {
+    color: #2d2d2d;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  &__abr {
+    color: #ff8888;
+  }
+
+  &__row-icon {
+    width: 13px;
+    height: 13px;
+    margin-top: 25px;
+    background-color: #d53535;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    &_start {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin-left: -7px;
+      margin-top: 0;
+    }
+
+    &_finish {
+      background-color: #fff;
+    }
+  }
+
+  &__point {
+    margin: 18px 21px 0 21px;
+    flex-shrink: 0;
+    transform: translateY(-15px);
+
+
+    &_start {
+      margin: 0 0 0 13px;
+      min-width: 250px;
+
+    }
+
+    @media (max-width: 1054px) {
+      margin: -30px 21px 10px 31px;
+    }
+  }
+
+  &__point-date {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $font-color-light;
+  }
+
+  &__point-name {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+  }
+
+  &__line {
+    position: absolute;
+    top: 50px;
+    left: 6px;
+    border: 1px solid $font-color-light;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 4px;
+      height: 4px;
+      border: 2px solid $font-color-light;
+      border-top: none;
+      border-left: none;
+      transform: rotateZ(45deg);
+      left: -3px;
+      bottom: -3px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 5;
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: $font-color-light;
+    text-transform: uppercase;
+    cursor: pointer;
+    right: 30px;
+    top: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      color: $base-font-color;
+
+      .tickets__close-svg {
+        fill: $base-font-color;
+      }
+    }
+  }
+
+  &__close-svg {
+    margin-left: 9px;
+  }
+
+  &__flight-data {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow: 1;
+
+    @media(max-width: 1050px) {
+      justify-content: flex-start;
+      padding: 0 0 0 35px;
+    }
+  }
+
+  &__info-arrow {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 0;
+  }
+
+  &__info-time {
+    color: #909090;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  &__ticket-info-view {
+    margin: 15px 0 0 0;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__departure-line {
+    width: 54px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #8c8c8c;
+  }
+
+  &__departure-city {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__departure-date {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    max-width: 175px;
+    width: 100%;
+  }
+
+  &__text {
+    color: #909090;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  &__circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #8a48c7;
+    margin: 0 4px;
+  }
+
+  &__icons {
+    max-width: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 29px;
+    border-radius: 2px;
+    background-color: #ffe934;
+    margin: 10px 0 0 0;
+  }
+
+  &__precio-info {
+    @media(max-width: 1050px) {
+      padding: 0 0 0 35px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  &__precio-money {
+    color: #2d2d2d;
+  }
+
+  &__precio-num {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 0 3px;
+  }
+
+  &__ticket-info-name {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .castom-arrow {
+    margin: 0 5px;
+  }
+
+  &__add-link {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #eee4f7;
+    color: #8a48c7;
+    font-size: 30px;
+    margin: 0 30px 0 -9px;
+
+    @media(max-width: 390px) {
+      margin: 0 10px 0 -9px;
+    }
+
+    &:hover {
+      background-color: darken(#eee4f7, 5%);
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    max-width: 283px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #2d2d2d;
+    margin: 0 20px 0 0;
+    color: #939393;
+    font-size: 14px;
+    font-weight: 700;
+
+    @media(max-width: 390px) {
+      margin: 0 10px 0 0;
+      width: 183px;
+      font-size: 9px;
+    }
+
+    &::placeholder {
+      color: #939393;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #1390e8;
+    border: none;
+    fill: #fff;
+
+    @media(max-width: 390px) {
+      width: 40px;
+    }
+
+    &:hover {
+      background-color: #007dd7;
+      cursor: pointer;
+    }
+
+    .arrow-btn {
+      width: 13px;
+      fill: $white;
+    }
+  }
+
+  &__finish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    height: 50px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 3px;
+    background-color: #1390e8;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media(max-width: 1050px) {
+      margin: 20px 0 0 -20px;
+    }
+
+    @media(max-width: 390px) {
+      margin: 20px 0 0 -10px;
+    }
+
+    &:hover {
+      background-color: #007dd7;
+      cursor: pointer;
+    }
+
+    .check-svg {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+.map-castom {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background: #707070;
+
+  .wrap {
+    padding: 0;
+  }
+}
+
+.tours__trip_activ {
+  border: none;
+
+  .tours__info-trip-link {
+    display: none;
+  }
+
+  .tickets__wrap {
+    padding: 60px 30px 15px 30px;
+  }
+
+  .tours__info-trip {
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #ececec;
+
+    }
+  }
+}
+
+.hand-baggage-icon {
+  position: relative;
+
+  &:before {
+    content: '15';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    right: -10px;
+    color: #000;
+    background: $white;
+  }
+}
+
+.connexion-svg {
+  margin: 0 10px 0 0;
+}

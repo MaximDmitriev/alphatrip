@@ -1,0 +1,104 @@
+.user.section
+    ._wrap.wrap
+        ._profile
+            label(for="avatar")._avatar
+                input(type="file")#avatar._avatar-input
+                svg(data-percent=74 class="user__avatar-svg" viewBox="0 0 164 164")
+                    circle(cx="82" cy="82" r="76")._avatar-base-border
+                    circle(cx="82" cy="82" r="76")._avatar-border
+                ._avatar-view
+                    img(src="img/user-bg.png", alt="avatar")._avatar-img
+                +svg('star', 'user__avatar-icon')
+            ._profile-content
+                ._profile-name Иван Петров
+                ._profile-text Ваш профиль заполнен на <span class="user__percent">74 %</span>
+                ._info
+                    +svg('info')
+                    ._info-text Заполненность профиля влияет на рейтинг
+                ._referral-info
+                    ._referral-title Ваша реф.сылка (<span class="user__referral-info">12</span> зарегистрированных)
+                    ._referral-link(id="referral-link") alphatrip.ru/userref12345678
+                    button(type='submit' data-clipboard-target="#referral-link")._referral-info-btn.btn
+                        +svg('reference', 'reference-svg')
+                        | скопировать
+
+        ._desc
+            ._city-info
+                ._city-label Место проживания
+                ._city-wrap
+                    ._city-name Россия, Санкт-Петербург
+                    ._city-btn
+                        +svg('edit')
+                ._info
+                    +svg('info')
+                    ._info-text Алгоритм будет подыскивать вылеты из вашего города
+            ._family
+                ._family-title Обычно путешествую
+                ._family-wrap
+                    ._family-group
+                        ._family-icon
+                            +svg('man-icon', 'append-icon more')
+                            +svg('girl', 'append-icon more')
+                        ._family-text вдвоем
+                    ._append
+                        ._append-item
+                            +svg('man-icon', 'append-icon')
+                            | &#10010;
+                        ._append-item
+                            +svg('childe', 'append-icon')
+                            | &#10010;
+                        ._append-item
+                            +svg('girl', 'append-icon')
+                            | &#10010;
+    ._rate
+        ._rate-text Ваш рейтинг 74%
+        ._progress
+    ._statistics
+        ._show-text
+            +svg('stats')
+            ._statistics-text смотреть статистику перелетов
+        ._show-text.-hidden
+            +svg('chevron-up')
+            ._statistics-text спрятать статистику перелетов
+    ._map
+        ._google-map
+        ._show-stats-box Показать статистику
+        ._stats-box
+            ._stats-box-close
+                +svg('cross')
+            ._stats-numbers
+                ._stats-line
+                    span._stats-line-number 175
+                    |  перелётов
+                ._stats-line
+                    span._stats-line-number 729
+                    |  часов в воздухе
+                ._stats-line
+                    span._stats-line-number 18 341
+                    |  километр
+            ._stats-graph(data-count="175")
+                ._stats-graph-column(data-count="37")
+                    ._stats-graph-count 37
+                    ._stats-graph-bar
+                        ._stats-graph-bar-progress
+                    ._stats-graph-year 2015
+                ._stats-graph-column(data-count="84")
+                    ._stats-graph-count 84
+                    ._stats-graph-bar
+                        ._stats-graph-bar-progress
+                    ._stats-graph-year 2016
+                ._stats-graph-column(data-count="18")
+                    ._stats-graph-count 18
+                    ._stats-graph-bar
+                        ._stats-graph-bar-progress
+                    ._stats-graph-year 2017
+                ._stats-graph-column(data-count="25")
+                    ._stats-graph-count 25
+                    ._stats-graph-bar
+                        ._stats-graph-bar-progress
+                    ._stats-graph-year 2018
+                ._stats-graph-column(data-count="11")
+                    ._stats-graph-count 11
+                    ._stats-graph-bar
+                        ._stats-graph-bar-progress
+                    ._stats-graph-year 2019

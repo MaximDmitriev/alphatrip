@@ -1,0 +1,134 @@
+.travel-options.section
+  ._wrap.wrap
+    ._passport
+      ._question
+        ._title Есть ли загранпаспорт?
+        button._question-btn.-yes Да 
+        button._question-btn.-no Нет
+      ._no-passport
+        +svg('passport')
+        ._text нет загранпаспорта 
+        button._no-passport-btn.btn уже есть
+      ._visa
+        ._title Действующие визы
+        ._visa-options
+          ._visa-options-item
+            ._visa-name
+              ._visa-num 1.
+              ._visa-icon 
+                +svg('visa-shengen')
+              ._visa-country шенгенская
+            input(type="text" placeholder="Страна выдачи")._visa-options-input
+            br
+            input(type="text" placeholder="Дата окончания")._visa-options-input
+          ._visa-options-item.travel-options__visa-options-item-next
+            ._visa-num 2.
+            input(type="text" placeholder="Название визы или страны")._visa-input
+
+    ._countrys
+      ._title Страны, где уже был
+      ._countrys-list
+        ._countrys-list-item
+          ._country
+            +svg('russia')
+            ._country-name Россия
+          ._country-city Москва
+          ._country-city Санкт-Петербург
+          input(type="text" placeholder="Название города")._input-city
+        ._countrys-list-item 
+          ._country
+            +svg('belarus')
+            ._country-name Беларусь
+          ._country-city Минск
+          ._country-city Гродно
+          input(type="text" placeholder="Название города")._input-city
+        ._countrys-list-item 
+          ._country
+            +svg('flag')
+            input(type="text" placeholder="Название страны")._input-country         
+
+    ._holiday-types
+      ._title Предпочтительные типы отдыха
+      ._holiday-types-items
+        label(for="cb1")
+          input(type="checkbox" id="cb1")._holiday-types-input
+          ._holiday-types-label семейный
+        label(for="cb2")
+          input(type="checkbox" id="cb2")._holiday-types-input
+          ._holiday-types-label лыжный
+        label(for="cb3")
+          input(type="checkbox" id="cb3")._holiday-types-input
+          ._holiday-types-label пляжный 
+        label(for="cb4")
+          input(type="checkbox" id="cb4")._holiday-types-input
+          ._holiday-types-label горный
+
+    ._amenities
+      ._title Минимальные удобства
+      ._amenities-items
+        label(for="wifi")
+          input(type="checkbox" id="wifi")._amenities-input
+          ._amenities-label 
+            +svg('wifi' , 'amenities-svg')
+            |wifi
+        label(for="kitchen") 
+          input(type="checkbox" id="kitchen")._amenities-input
+          ._amenities-label
+            +svg('kitchen' , 'amenities-svg')
+            |кухня
+        label(for="conditioner")
+          input(type="checkbox" id="conditioner")._amenities-input
+          ._amenities-label 
+            +svg('conditioner' , 'amenities-svg')
+            |Кондиционер
+        label(for="safe")
+          input(type="checkbox" id="safe")._amenities-input
+          ._amenities-label 
+            +svg('safe' , 'amenities-svg')
+            |Сейф
+        label(for="heating")
+          input(type="checkbox" id="heating")._amenities-input
+          ._amenities-label 
+            +svg('heating' , 'amenities-svg')
+            |Отопление 
+        label(for="table") 
+          input(type="checkbox" id="table")._amenities-input
+          ._amenities-label
+            +svg('table' , 'amenities-svg')
+            |Стол для работы <br> на ноутбуке
+        label(for="gymnasium") 
+          input(type="checkbox" id="gymnasium")._amenities-input
+          ._amenities-label
+            +svg('gymnasium',  'amenities-svg')
+            |Спорт-зал
+        label(for="washer")
+          input(type="checkbox" id="washer")._amenities-input
+          ._amenities-label 
+            +svg('washer' , 'amenities-svg')
+            |Стиральная <br> машина
+        label(for="flatiron")
+          input(type="checkbox" id="flatiron")._amenities-input
+          ._amenities-label 
+            +svg('flatiron' , 'amenities-svg')
+            |Утюг
+        label(for="refrigerator")
+          input(type="checkbox" id="refrigerator")._amenities-input
+          ._amenities-label 
+            +svg('refrigerator' , 'amenities-svg')
+            |Холодильник
+        label(for="hairdryer") 
+          input(type="checkbox" id="hairdryer")._amenities-input
+          ._amenities-label 
+            +svg('hairdryer' , 'amenities-svg')
+            |Фен
+        label(for="tv")
+          input(type="checkbox" id="tv")._amenities-input
+          ._amenities-label 
+            +svg('tv' , 'amenities-svg')
+            |ТВ
+        label(for="toiletries") 
+          input(type="checkbox" id="toiletries")._amenities-input
+          ._amenities-label 
+            +svg('toiletries' , 'amenities-svg')
+            |Предметы первой <br> необходимости
+      

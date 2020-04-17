@@ -1,0 +1,97 @@
+.irs--nutrition-calc {
+  height: 37px;
+
+  .irs {
+    height: 100%;
+  }
+
+  .irs-line {
+    top: 5px;
+    height: 6px;
+    background: #eaeaea;
+    border-radius: 4px;
+  }
+
+  .irs-bar {
+    top: 5px;
+    height: 6px;
+    background: #8b8b8b;
+  }
+
+  .irs-bar--single {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .irs-shadow {
+    height: 1px;
+    bottom: 16px;
+    background-color: #e1e4e9;
+  }
+
+  // Бегунок
+  .irs-handle {
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #2d2d2d;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Минимальное/максимальное значения
+  .irs-min,
+  .irs-max {
+    top: 18px;
+    color: #bababa;
+    font-size: 12px;
+    font-weight: 600;
+    visibility: visible !important;
+  }
+
+  .irs-from,
+  .irs-to {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 10px;
+  }
+
+  .irs-single {
+    left: 0 !important;
+    top: calc(100% - 16px);
+    right: 0;
+    text-align: center;
+    font-size: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:after {
+      content: '';
+
+    }
+
+    &_ccal {
+      font-size: 14px;
+
+      &:after {
+        content: ' ккал/день';
+        text-transform: uppercase;
+        color: #bababa;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .irs-grid-pol {
+    background-color: #e1e4e9;
+  }
+
+  .irs-grid-text {
+    color: #999;
+  }
+}

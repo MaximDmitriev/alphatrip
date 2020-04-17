@@ -1,0 +1,102 @@
+.alimentation
+  ._title
+    +svg('alimentation', 'alimentation-icon')
+    | питание
+  ._info
+    ._calories
+      ._calories-item
+        ._calories-item-title
+          +svg('man', 'alimentation-icon-man')
+          ._text Нужное 1-му человеку количество ккал
+          button._btn(type='submit') не знаю
+        input(type="text" class="slider" name="slider" value="")
+        ._calories-text.-men среднее количество для мужчины
+
+      ._calories-item
+        ._calories-item-title
+          +svg('man', 'alimentation-icon-man')
+          ._text Данные 2-го человека для расчета нужных кКал
+        ._inputs
+          input(type="text" placeholder="Рост, см")._input 
+          input(type="text" placeholder="Вес")._input 
+          input(type="text" placeholder="Возраст")._input 
+          input(type="text" placeholder="Талия, см")._input 
+        ._descr 2000 кКал — среднее количество для женщины
+
+      ._calories-item
+        ._calories-item-title
+          +svg('children', 'alimentation-icon-man')
+          ._text Нужное ребенку количество ккал
+          button._btn(type='submit') не знаю
+        input(type="text" class="slider-child" name="slider" value="")
+        ._calories-text
+          ._calories-text-num 2000
+          ._calories-text-measur ккал/день
+
+    ._expenses
+      ._city-info
+        ._box
+          ._city-name 
+            +svg('position', 'position-svg')
+            | Будапешт
+          button(type='submit')._city-mor-info смотреть цены
+        ._city-measur
+          .list-info
+            .transport__city-info 
+              +svg('close', 'box-info-close')
+              .box__text Бензин
+              .box__dasht
+              .box__number 100
+              .box__measure Р
+              +svg('edit', 'box-info-edit')
+            .transport__city-info 
+              +svg('close', 'box-info-close')
+              .box__text Бензин
+              .box__dasht
+              .box__number 100
+              .box__measure Р
+              +svg('edit', 'box-info-edit')
+          .measur-add-item
+            +svg('plus')
+            | добавить трату
+
+      ._city-info
+        ._box
+          ._city-name 
+            +svg('position', 'position-svg')
+            | Будапешт
+          button(type='submit')._city-mor-info смотреть цены
+        ._city-measur
+          .list-info
+            .transport__city-info 
+              +svg('close', 'box-info-close')
+              .box__text Бензин
+              .box__dasht
+              .box__number 100
+              .box__measure Р
+              +svg('edit', 'box-info-edit')
+            .transport__city-info 
+              +svg('close', 'box-info-close')
+              .box__text Бензин
+              .box__dasht
+              .box__number 100
+              .box__measure Р
+              +svg('edit', 'box-info-edit')
+          .measur-add-item
+            +svg('plus')
+            | добавить трату
+
+
+        
+
+
+  ._dashed-line
+  ._statistics
+    ._statistics-info
+      ._statistics-text Среднее в день:
+      ._statistics-number 2 500
+      ._statistics-measure Р
+    ._statistics-info
+      ._statistics-text Всего:
+      ._statistics-number 2 500
+      ._statistics-measure Р

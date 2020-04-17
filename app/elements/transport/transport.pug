@@ -1,0 +1,144 @@
+.transport
+  .base-title.-transport
+    +svg('auto', 'auto-svg')
+    | Транспорт
+  .__type общественный транспорт
+  ._citys
+    ._box
+      .box-info.-trans 
+        +svg('close', 'box-info-close box-info-close-trans')
+        +svg('position', 'position-svg position-svg-trans')
+        .box__text.-trans Венеция
+        .box__dasht
+        .box__number 100
+        .box__measure Р
+        +svg('edit', 'box-info-edit')
+      ._box.-info
+      .measur-add-item
+        +svg('plus')
+        | добавить трату
+    ._box
+      .box-info.-trans 
+        +svg('close', 'box-info-close box-info-close-trans')
+        +svg('position', 'position-svg position-svg-trans')
+        .box__text.-trans Венеция
+        .box__dasht
+        .box__number 100
+        .box__measure Р
+        +svg('edit', 'box-info-edit') 
+      ._box.-info
+      .measur-add-item
+        +svg('plus')
+        | добавить трату
+  .__type
+    label(for="auto")
+      input(type="checkbox" id="auto")._checkbox
+      ._label аренда авто
+  ._citys
+    ._box
+      ._city-name 
+        +svg('position', 'position-svg')
+        | Будапешт
+      ._city-list
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Бензин
+          .box__dasht
+          .box__number 100
+          .box__measure Р/Л
+          +svg('edit', 'box-info-edit')
+        
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Километров
+          .box__dasht
+          .box__number 100
+          .box__measure КМ
+          +svg('edit', 'box-info-edit')
+        
+        //
+          ._info
+            +svg('edit', 'transport-edit')
+            ._info-text Вы можете изменить маршрут и система рассчитает новое расстояние и стоимость бензина
+
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Весь бензин
+          .box__dasht
+          .box__number 100
+          .box__measure КМ
+          +svg('edit', 'box-info-edit')
+
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Платные дороги
+          .box__dasht
+          .box__number 100
+          .box__measure КМ
+          +svg('edit', 'box-info-edit')
+      .measur-add-item
+        +svg('plus')
+        | добавить трату
+
+        
+    ._box
+      ._city-name 
+        +svg('position', 'position-svg')
+        | Венеция
+      ._city-list
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Бензин
+          .box__dasht
+          .box__number 100
+          .box__measure Р/Л
+          +svg('edit', 'box-info-edit')
+
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Километров
+          .box__dasht
+          .box__number 100
+          .box__measure Р/Л
+          +svg('edit', 'box-info-edit')
+
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Весь бензин
+          .box__dasht
+          .box__number 100
+          .box__measure Р/Л
+          +svg('edit', 'box-info-edit')
+        //
+          ._info
+            +svg('edit', 'transport-edit')
+            ._info-text Вы можете изменить маршрут и система рассчитает новое расстояние и стоимость бензина
+
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Платные дороги
+          .box__dasht
+          .box__number 100
+          .box__measure Р/Л
+          +svg('edit', 'box-info-edit')
+
+        .box-info 
+          +svg('close', 'box-info-close')
+          .box__text Километров
+          .box__dasht
+          .box__number 100
+          .box__measure Р/Л
+          +svg('edit', 'box-info-edit')
+      .measur-add-item
+        +svg('plus')
+        | добавить трату
+  ._dashed-line
+  ._statistics
+    ._statistics-info
+      ._statistics-text Среднее в день:
+      ._statistics-number 2 500
+      ._statistics-measure Р
+    ._statistics-info
+      ._statistics-text Всего:
+      ._statistics-number 2 500
+      ._statistics-measure Р

@@ -1,0 +1,487 @@
+.tickets {
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  background: #ffffff;
+  border-radius: 7px 7px 0 0;
+
+  &__wrap {
+    padding: 0 29px;
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 1054px) {
+      flex-direction: column;
+    }
+  }
+
+  &__row-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+
+    @media (max-width: 1054px) {
+      margin-left: 30px;
+      margin-top: 10px;
+      max-width: 644px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 380px;
+    }
+
+    @media (max-width: 509px) {
+      width: 94%;
+    }
+  }
+
+  &__row-icon {
+    width: 13px;
+    height: 13px;
+    margin-top: 25px;
+    background-color: #d53535;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    &_start {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin-left: -7px;
+      margin-top: 13px;
+    }
+
+    &_finish {
+      background-color: #fff;
+    }
+  }
+
+  &__point {
+    margin: 18px 21px 0 21px;
+    flex-shrink: 0;
+
+    &_start {
+      margin: 18px 21px 0 13px;
+    }
+
+    @media (max-width: 1054px) {
+      margin: -30px 21px 10px 31px;
+    }
+  }
+
+  &__point-date {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $font-color-light;
+  }
+
+  &__point-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__tickets-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 1054px) {
+      margin-left: 30px;
+    }
+  }
+
+  &__small-ticket {
+    margin: 0 10px 10px 0;
+    padding: 14px 21px 14px 14px;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+  }
+
+  &__small-ticket-name {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__small-ticket-info {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__arrow-svg {
+    transform: rotateZ(-90deg);
+    margin: 0 7px;
+  }
+
+  &__booking {
+    display: flex;
+  }
+
+  &__booking-wrap {
+    display: flex;
+    align-items: center;
+    border: 2px dashed $font-color-light;
+    border-radius: 5px;
+    padding: 16px 26px;
+
+    &_empty {
+      position: relative;
+      flex-shrink: 0;
+      width: 75px;
+      border-right: none;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 6px;
+        border: 2px solid $font-color-light;
+        border-left: none;
+        border-top: none;
+        transform: rotateZ(45deg);
+        border-radius: 0 0 6px 0;
+        right: -5px;
+        top: -4px;
+        background: #ffffff;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 6px;
+        border: 2px solid $font-color-light;
+        border-right: none;
+        border-bottom: none;
+        transform: rotateZ(45deg);
+        border-radius: 6px 0 0 0;
+        right: -5px;
+        bottom: -4px;
+        background: #ffffff;
+      }
+
+      @media (max-width: 1054px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    @media (max-width: 509px) {
+      padding: 16px 10px;
+    }
+  }
+
+  &__booking-operations {
+    display: flex;
+
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 509px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__booking-inputs {
+    display: flex;
+    margin: 0 37px;
+
+    @media (max-width: 767px) {
+      margin: 0 20px;
+    }
+  }
+
+  &__booking-input {
+    width: 21px;
+    height: 29px;
+    border: none;
+    border-bottom: 2px solid $base-font-color;
+    // color: #dad9d9;
+    font-size: 18px;
+    padding: 7px 5px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__booking-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    background-color: $icon-color;
+
+    @media (max-width: 509px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__booking-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__booking-info {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: $font-color-light;
+    margin-top: 10px;
+  }
+
+  &__info-svg {
+    width: 6px;
+    height: 12px;
+    margin-right: 11px;
+  }
+
+  &__ticket {
+    display: flex;
+    margin-top: 10px;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__ticket-info {
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-right: 2px dashed #ffffff;
+
+    @media (max-width: 767px) {
+      border: none;
+    }
+
+    @media (max-width: 509px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__ticket-info-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  &__ticket-reserv {
+    display: flex;
+    font-size: 10px;
+    font-weight: 700;
+    color: #6fb400;
+    text-transform: uppercase;
+
+    @media (max-width: 509px) {
+      margin-top: 10px;
+      justify-content: center;
+    }
+  }
+
+  &__ticket-reserv-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #7cc409;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &__ticket-data {
+    display: flex;
+    margin-left: 22px;
+
+    @media (max-width: 509px) {
+      margin-top: 15px;
+    }
+  }
+
+  &__ticket-data-name {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__ticket-data-date {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $font-color-light;
+    margin-top: 10px;
+  }
+
+  &__right-svg {
+    fill: #c0c0c0;
+    margin: 2px 17px 2px 0;
+  }
+
+  &__ticket-package {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f2f2f2;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #ffffff;
+      left: -4px;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &::before {
+      top: -3px;
+    }
+
+    &::after {
+      bottom: -3px;
+    }
+
+    @media (max-width: 509px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__package-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @media (max-width: 509px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__package-params {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__package-info {
+    font-size: 12px;
+    color: #707070;
+    margin-top: 6px;
+  }
+
+  &__slider {
+    position: relative;
+    width: 100%;
+  }
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    right: -2px;
+    width: 90px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+
+    @media (max-width: 509px) {
+      width: 30px;
+    }
+  }
+
+  &__slider-arrow {
+    width: 8px;
+    height: 19px;
+    margin-left: 20px;
+
+    @media (max-width: 509px) {
+      margin-left: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    top: 50px;
+    left: 6px;
+    border: 1px solid $font-color-light;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 4px;
+      height: 4px;
+      border: 2px solid $font-color-light;
+      border-top: none;
+      border-left: none;
+      transform: rotateZ(45deg);
+      left: -3px;
+      bottom: -3px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 200;
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: $font-color-light;
+    text-transform: uppercase;
+    cursor: pointer;
+    right: 30px;
+    top: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      color: $base-font-color;
+
+      .tickets__close-svg {
+        fill: $base-font-color;
+      }
+    }
+  }
+
+  &__close-svg {
+    margin-left: 9px;
+  }
+}

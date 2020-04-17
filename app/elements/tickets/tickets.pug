@@ -1,0 +1,180 @@
+.tickets
+    ._close свернуть
+        +svg('up', 'tickets__close-svg')
+    ._wrap
+        ._row
+            ._row-icon.-start
+                +svg('plane', 'tours__trip-svg')
+            ._point.-start
+                ._point-date 10 фев
+                ._point-name москва
+            ._tickets-group
+                ._small-ticket
+                    ._small-ticket-name Иван Петров
+                    ._small-ticket-info
+                        | DME
+                        +svg('down', 'tickets__arrow-svg')
+                        | BUD
+                ._small-ticket
+                    ._small-ticket-name Иван Петров
+                    ._small-ticket-info
+                        | DME
+                        +svg('down', 'tickets__arrow-svg')
+                        | BUD
+                ._small-ticket
+                    ._small-ticket-name Иван Петров
+                    ._small-ticket-info
+                        | DME
+                        +svg('down', 'tickets__arrow-svg')
+                        | BUD
+                ._small-ticket
+                    ._small-ticket-name Иван Петров
+                    ._small-ticket-info
+                        | DME
+                        +svg('down', 'tickets__arrow-svg')
+                        | BUD
+        ._row
+            ._row-icon
+            ._point
+                ._point-date 10 фев  —  13 фев
+                ._point-name будапешт
+            ._row-container
+                ._booking
+                    ._booking-wrap.-empty
+                    ._booking-wrap
+                        ._booking-text
+                            ._booking-title проверьте бронь билета (введите 6-значный код)
+                            ._booking-info
+                                +svg('info', 'tickets__info-svg')
+                                | Также мы напомним вам о вылете или задержках
+                        ._booking-operations
+                            ._booking-inputs
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                            ._booking-btn
+                                +svg('right-arrow')
+                .tickets__slider
+                    .tickets__overlay
+                        .tickets__slider-arrow
+                            +svg('slider-arrow')
+                    .swiper-container(data-slider="tickets")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .tickets__ticket
+                                    .tickets__ticket-info
+                                        .tickets__ticket-info-view
+                                            +icon('ryanair-big')
+                                            .tickets__ticket-reserv
+                                                .tickets__ticket-reserv-icon
+                                                    +svg('checked', 'tours__trip-svg')
+                                                | бронь <br>есть
+                                        .tickets__ticket-data
+                                            .tickets__ticket-data-item
+                                                .tickets__ticket-data-name dme
+                                                .tickets__ticket-data-date 15.02.2019 <br>17:43
+                                            +svg('right-arrow', 'tickets__right-svg')
+                                            .tickets__ticket-data-item
+                                                .tickets__ticket-data-name bud
+                                                .tickets__ticket-data-date 15.02.2019 <br>22:35
+                                    .tickets__ticket-package
+                                        .tickets__package-item
+                                            +svg('pack')
+                                            .tickets__package-params
+                                                .tickets__package-info Ручная кладь
+                                                .tickets__package-info 19 кг, 30x70x100 см
+                                        .tickets__package-item
+                                            +svg('cart')
+                                            .tickets__package-params
+                                                .tickets__package-info Багаж
+                                                .tickets__package-info 19 кг, 30x70x100 см
+                            .swiper-slide
+                                .tickets__ticket
+                                    .tickets__ticket-info
+                                        .tickets__ticket-info-view
+                                            +icon('ryanair-big')
+                                            .tickets__ticket-reserv
+                                                .tickets__ticket-reserv-icon
+                                                    +svg('checked', 'tours__trip-svg')
+                                                | бронь <br>есть
+                                        .tickets__ticket-data
+                                            .tickets__ticket-data-item
+                                                .tickets__ticket-data-name dme
+                                                .tickets__ticket-data-date 15.02.2019 <br>17:43
+                                            +svg('right-arrow', 'tickets__right-svg')
+                                            .tickets__ticket-data-item
+                                                .tickets__ticket-data-name bud
+                                                .tickets__ticket-data-date 15.02.2019 <br>22:35
+                                    .tickets__ticket-package
+                                        .tickets__package-item
+                                            +svg('pack')
+                                            .tickets__package-params
+                                                .tickets__package-info Ручная кладь
+                                                .tickets__package-info 19 кг, 30x70x100 см
+                                        .tickets__package-item
+                                            +svg('cart')
+                                            .tickets__package-params
+                                                .tickets__package-info Багаж
+                                                .tickets__package-info 19 кг, 30x70x100 см
+                            .swiper-slide
+                                .tickets__ticket
+                                    .tickets__ticket-info
+                                        .tickets__ticket-info-view
+                                            +icon('ryanair-big')
+                                            .tickets__ticket-reserv
+                                                .tickets__ticket-reserv-icon
+                                                    +svg('checked', 'tours__trip-svg')
+                                                | бронь <br>есть
+                                        .tickets__ticket-data
+                                            .tickets__ticket-data-item
+                                                .tickets__ticket-data-name dme
+                                                .tickets__ticket-data-date 15.02.2019 <br>17:43
+                                            +svg('right-arrow', 'tickets__right-svg')
+                                            .tickets__ticket-data-item
+                                                .tickets__ticket-data-name bud
+                                                .tickets__ticket-data-date 15.02.2019 <br>22:35
+                                    .tickets__ticket-package
+                                        .tickets__package-item
+                                            +svg('pack')
+                                            .tickets__package-params
+                                                .tickets__package-info Ручная кладь
+                                                .tickets__package-info 19 кг, 30x70x100 см
+                                        .tickets__package-item
+                                            +svg('cart')
+                                            .tickets__package-params
+                                                .tickets__package-info Багаж
+                                                .tickets__package-info 19 кг, 30x70x100 см
+        ._row
+            ._row-icon
+            ._point
+                ._point-date 13 фев  —  15 фев
+                ._point-name венеция
+            ._row-container
+                ._booking
+                    ._booking-wrap.-empty
+                    ._booking-wrap
+                        ._booking-text
+                            ._booking-title проверьте бронь билета (введите 6-значный код)
+                            ._booking-info
+                                +svg('info', 'tickets__info-svg')
+                                | Также мы напомним вам о вылете или задержках
+                        ._booking-operations
+                            ._booking-inputs
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                                input(type="text" placeholder="X")._booking-input
+                            button._booking-btn
+                                +svg('right-arrow')
+        ._row
+            ._row-icon.-finish
+                +svg('finish')
+            ._point
+                ._point-date 10 фев
+                ._point-name москва
+

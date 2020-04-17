@@ -1,0 +1,129 @@
+.modal#hotelGallery
+    ._dialog
+        ._content
+            .gallery
+                ._close(data-role="modal-close")
+                    +svg('cross')
+                ._hotel-name mira and spicy apartments
+                .swiper-container(data-slider="big")
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                        .swiper-slide
+                            img(src="img/hotel-big.jpg").gallery__photo
+                ._thumbs
+                    ._nav-btn.-prev(data-nav="prev-slide")
+                        +svg('slider-prev')
+                    .swiper-container(data-slider="thumbs")
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="img/hotel-thumb-1.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-2.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-3.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-4.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-5.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-1.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-2.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-3.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-4.jpg").gallery__photo
+                            .swiper-slide
+                                img(src="img/hotel-thumb-5.jpg").gallery__photo
+                    ._nav-btn.-next(data-nav="next-slide")
+                        +svg('slider-next')
+                ._btn Выбрать другое жильё
+                    span._btn-date на 17 фев
+                ._title средняя оценка и отзывы
+                ._service-rating
+                    ._system   
+                        ._service
+                            +icon('airbnb', 'modal-airbnb')
+                            ._rating 8,6
+                    ._filter-reviews
+                        ._filter-reviews-text Сортировать:
+                        ._filter-reviews-list
+                            label(for="good-reviews")
+                                input(type="checkbox" id="good-reviews")._input
+                                ._label.-good хорошие
+                            label(for="mean-reviews")
+                                input(type="checkbox" id="mean-reviews")._input
+                                ._label.-mean средние
+                            label(for="bad-reviews")
+                                input(type="checkbox" id="bad-reviews")._input
+                                ._label.-bad плохие
+                .swiperFeedback            
+                    .swiper-container(data-slider="swiperFeedback")
+                        .swiper-wrapper
+                            .swiper-slide                       
+                                .gallery-user-feedback
+                                    ._header
+                                        ._name Иван Петров
+                                        ._result 8.8
+                                    ._descr
+                                        ._pros 
+                                            ._item
+                                                | + Cвежая, чистая, уютная с дизайном гостиница
+                                                | с отличным расположением в центре города,
+                                                | где проходят туристические маршруты. И имеет
+                                                | свою собственную стоянку.
+                                        ._minuses
+                                            ._item
+                                                | - Нет лифта.
+                            .swiper-slide                       
+                                .gallery-user-feedback
+                                    ._header
+                                        ._name Иван Петров
+                                        ._result 8.8
+                                    ._descr
+                                        ._pros 
+                                            ._item
+                                                | + Cвежая, чистая, уютная с дизайном гостиница
+                                                | с отличным расположением в центре города,
+                                                | где проходят туристические маршруты. И имеет
+                                                | свою собственную стоянку.
+                                        ._minuses
+                                            ._item
+                                                | - Нет лифта.
+                            .swiper-slide                       
+                                .gallery-user-feedback
+                                    ._header
+                                        ._name Иван Петров
+                                        ._result 8.8
+                                    ._descr
+                                        ._pros 
+                                            ._item
+                                                | + Cвежая, чистая, уютная с дизайном гостиница
+                                                | с отличным расположением в центре города,
+                                                | где проходят туристические маршруты. И имеет
+                                                | свою собственную стоянку.
+                                        ._minuses
+                                            ._item
+                                                | - Нет лифта.
+                            
+                    .gallery__nav-btn.-prev(data-nav="feedback-prev-slide")
+                        +svg('slider-prev')
+                    .gallery__nav-btn.-next(data-nav="feedback-next-slide")
+                        +svg('slider-next')

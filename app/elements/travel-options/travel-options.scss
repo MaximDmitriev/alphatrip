@@ -1,0 +1,337 @@
+.travel-options {
+  $root: &;
+  padding: 48px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #ffffff;
+
+  @media (max-width: 767px) {
+    padding: 20px 15px;
+  }
+
+  &__passport {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  &__question-btn {
+    width: 64px;
+    height: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    border-radius: 3px;
+    border: none;
+    background-color: $icon-color;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+    &:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+      background-color: #007dd7;
+    }
+  }
+
+  &__no-passport {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__no-passport-btn {
+    width: 56px;
+    height: 17px;
+    opacity: 0.6;
+    color: #2d2d2d;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(#bababa, .6);
+    text-transform: uppercase;
+
+
+    &:hover {
+      background-color: rgba(#bababa, .2);
+    }
+  }
+
+  &__text {
+    display: inline-block;
+  }
+
+  &__visa-name {
+    max-width: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__visa-country {
+    font-size: 12px;
+  }
+
+  &__visa-options {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: 509px) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__visa-options-item {
+    min-width: 200px;
+  }
+
+  &__visa-options-item-next {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+
+    @media (max-width: 509px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__visa-options-input {
+    width: 125px;
+    height: 28px;
+    color: $base-font-color;
+    font-size: 13px;
+    font-style: italic;
+    padding: 0px 11px;
+    margin-top: 10px;
+    margin-left: 19px;
+    border-radius: 2px;
+    border: none;
+    background-color: #ececec;
+  }
+
+  &__visa-input {
+    width: 195px;
+    height: 28px;
+    color: $base-font-color;
+    font-size: 13px;
+    font-style: italic;
+    padding: 0px 11px;
+    border-radius: 2px;
+    border: none;
+    background-color: #ececec;
+    margin-left: 9px;
+
+  }
+
+  &__visa-num {
+    font-size: 12px;
+  }
+
+  &__holiday-types {
+    margin-top: 50px;
+
+    @media (max-width: 509px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__holiday-types-input {
+    display: none;
+  }
+
+  &__holiday-types-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__holiday-types-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    padding-left: 20px;
+    border-radius: 3px;
+    background-color: #ececec;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 8px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: $base-font-color;
+    }
+
+    @media (max-width: 509px) {
+      margin-bottom: 10px;
+      font-size: 12px;
+
+    }
+  }
+
+  &__holiday-types-input {
+    &:checked {
+      +#{$root} {
+        &__holiday-types-label {
+          color: $icon-color;
+          background: rgba($icon-color, 0.2);
+        }
+      }
+    }
+  }
+
+  &__amenities-input {
+    &:checked {
+      +#{$root} {
+        &__amenities-label {
+          color: $icon-color;
+          background: rgba($icon-color, 0.2);
+        }
+      }
+    }
+  }
+
+  &__holiday-types-input {
+    &:checked {
+      +#{$root} {
+        &__holiday-types-label {
+          &::before {
+            background: $icon-color;
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+  &__amenities {
+    margin-top: 50px;
+
+    @media (max-width: 509px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__amenities-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__amenities-input {
+    display: none;
+
+    &:checked {
+      +.travel-options__amenities-label {
+        .amenities-svg {
+          fill: rgba(28, 128, 212, 1);
+        }
+      }
+    }
+  }
+
+  &__amenities-label {
+    height: 39px;
+    padding-left: 9px;
+    padding-right: 16px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #ececec;
+    margin-right: 10px;
+    cursor: pointer;
+
+    @media (max-width: 509px) {
+
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 12px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+
+    }
+  }
+
+  &__countrys {
+    margin-top: 50px;
+
+    @media (max-width: 509px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__countrys-list-item {
+    margin-bottom: 17px;
+    margin-right: 50px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__country {
+    display: flex;
+    align-items: center;
+  }
+
+  &__country-name,
+  &__country-flag {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__country-name {
+    margin-left: 10px;
+  }
+
+  &__countrys-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input-city,
+  &__input-country {
+    width: 145px;
+    height: 28px;
+    padding: 0 10px;
+    color: $base-font-color;
+    font-size: 13px;
+    margin-top: 17px;
+    font-style: italic;
+    border: none;
+    border-radius: 2px;
+    background-color: #ececec;
+
+  }
+
+  &__input-country {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  &__country-city {
+    font-size: 12px;
+    text-transform: none;
+    margin-top: 6px;
+  }
+
+
+}

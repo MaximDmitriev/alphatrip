@@ -1,0 +1,666 @@
+.icon {
+  display: inline-block;
+
+  &.example-png-icon {
+    background: url(img/icons/example.png);
+    width: 30px;
+    height: 30px;
+  }
+
+  // app/elements/housing/icons
+  &.booking {
+    background: url(img/icons/booking.png);
+    width: 60px;
+    height: 10px;
+  }
+
+  &.aviasales {
+    background: url(img/icons/aviasales.png)no-repeat center/cover;
+    width: 90px;
+    height: 23px;
+  }
+
+  &.airbnb {
+    background: url(img/icons/airbnb.png)no-repeat left bottom;
+    width: 60px;
+    height: 10px;
+  }
+
+  // app/elements/gallery/icons
+  &.instagram-icon {
+    background: url(img/icons/instagram-icon.png);
+    width: 29px;
+    height: 29px;
+  }
+
+  &-map-marker {
+    width: 13px;
+    height: 15px;
+    fill: #fff;
+  }
+
+  &-example-svg-icon {
+    width: 30px;
+    height: 30px;
+    fill: red;
+  }
+
+  &-logo {
+    width: 105px;
+    height: 25px;
+    fill: #f9df07;
+  }
+
+  &-rub {
+    width: 8px;
+    height: 12px;
+    fill: #212121;
+  }
+
+  &-euro {
+    width: 8px;
+    height: 12px;
+    fill: #212121;
+  }
+
+  &-dollar {
+    width: 8px;
+    height: 12px;
+    fill: #212121;
+  }
+
+  &-off {
+    width: 10px;
+    height: 10px;
+    fill: #212121;
+  }
+
+  &-arrow-down {
+    width: 9px;
+    height: 8px;
+    fill: #ffffff;
+  }
+
+  &-ig {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff;
+  }
+
+  &-vk {
+    width: 16px;
+    height: 10px;
+    fill: #ffffff;
+  }
+
+  &-fb {
+    width: 7px;
+    height: 16px;
+    fill: #ffffff;
+  }
+
+  &-edit {
+    width: 14px;
+    height: 15px;
+    fill: #6a6a6a;
+  }
+
+  //app/elements/tours/svg-icons
+  &-star-trip {
+    width: 20px;
+    height: 20px;
+    fill: $white;
+  }
+
+  &-point-arrow {
+    width: 10px;
+    height: 8px;
+    fill: #2d2d2d;
+  }
+
+  &-departure-arrow {
+    width: 54px;
+    height: 8px;
+    fill: #8c8c8c;
+  }
+
+  &-personal-thing {
+    width: 19px;
+    height: 19px;
+    fill: #2d2d2d;
+  }
+
+  &-connexion {
+    width: 13px;
+    height: 17px;
+    fill: #ff8888;
+  }
+
+  &-check {
+    width: 14px;
+    height: 10px;
+    fill: #fff;
+  }
+
+  &-hand-baggage {
+    width: 23px;
+    height: 15px;
+    fill: #2d2d2d;
+  }
+
+  &-bag-with {
+    width: 21px;
+    height: 14px;
+    fill: #2d2d2d;
+  }
+
+  &-pdf {
+    width: 25px;
+    height: 18px;
+    fill: #949494;
+  }
+
+  //app/elements/user
+
+  &-info {
+    width: 8px;
+    height: 16px;
+    fill: #6c6c6c;
+  }
+
+  &-star {
+    width: 95px;
+    height: 88px;
+    fill: #ffffff;
+  }
+
+  &-chevron-up {
+    width: 15px;
+    height: 7px;
+  }
+
+  &-cross {
+    width: 12px;
+    height: 12px;
+    fill: #6c6c6c;
+  }
+
+  &-stats {
+    width: 32px;
+    height: 11px;
+    fill: #000000;
+    transition: 0.2s;
+  }
+
+  &-reference {
+    width: 11px;
+    height: 11px;
+    fill: $font-color-light;
+    transition: 0.2s;
+  }
+
+  &-girl {
+    width: 14px;
+    height: 27px;
+    fill: $white;
+    transition: 0.2s;
+  }
+
+  &-man-icon {
+    width: 11px;
+    height: 27px;
+    fill: $white;
+    transition: 0.2s;
+  }
+
+  &-childe {
+    width: 19px;
+    height: 27px;
+    fill: $white;
+    transition: 0.2s;
+  }
+
+  // app/elements/travel-options/svg-icons
+  &-passport {
+    width: 20px;
+    height: 28px;
+    fill: rgba(45, 45, 45, 1);
+  }
+
+  &-visa-shengen {
+    width: 34px;
+    height: 34px;
+    fill: rgba(28, 128, 212, 1);
+  }
+
+  &-wifi {
+    width: 19px;
+    height: 15px;
+  }
+
+  &-kitchen {
+    width: 19px;
+    height: 19px;
+  }
+
+  &-conditioner {
+    width: 19px;
+    height: 19px;
+  }
+
+  &-safe {
+    width: 18px;
+    height: 17px;
+  }
+
+  &-heating {
+    width: 16px;
+    height: 19px;
+  }
+
+  &-table {
+    width: 19px;
+    height: 19px;
+  }
+
+  &-gymnasium {
+    width: 19px;
+    height: 13px;
+  }
+
+  &-washer {
+    width: 13px;
+    height: 19px;
+  }
+
+  &-flatiron {
+    width: 19px;
+    height: 17px;
+  }
+
+  &-refrigerator {
+    width: 11px;
+    height: 19px;
+  }
+
+  &-hairdryer {
+    width: 19px;
+    height: 13px;
+  }
+
+  &-tv {
+    width: 19px;
+    height: 19px;
+  }
+
+  &-toiletries {
+    width: 16px;
+    height: 19px;
+  }
+
+  &-plane {
+    width: 10px;
+    height: 10px;
+    fill: #7a7a7a;
+  }
+
+  &-checked {
+    width: 10px;
+    height: 8px;
+    fill: #7a7a7a;
+  }
+
+  &-finish {
+    width: 14px;
+    height: 18px;
+    fill: #d53535;
+  }
+
+  &-arrow-next {
+    width: 29px;
+    height: 8px;
+    fill: #2d2d2d;
+  }
+
+  &-russia {
+    width: 22px;
+    height: 20px;
+  }
+
+  &-belarus {
+    width: 22px;
+    height: 20px;
+  }
+
+  &-flag {
+    width: 25px;
+    height: 20px;
+  }
+
+  // app/elements/advice/svg-icons
+  &-info {
+    width: 10px;
+    height: 21px;
+    fill: #555555;
+  }
+
+  &-pharmacy {
+    width: 27px;
+    height: 22px;
+    fill: #555555;
+  }
+
+  &-plus {
+    width: 13px;
+    height: 13px;
+    fill: $font-color-light;
+  }
+
+  &-documents {
+    width: 21px;
+    height: 24px;
+    fill: #555555;
+  }
+
+  &-clothes {
+    width: 26px;
+    height: 24px;
+    fill: #555555;
+  }
+
+  &-kicks {
+    width: 27px;
+    height: 14px;
+    fill: #555555;
+  }
+
+  &-hygiene {
+    width: 27px;
+    height: 22px;
+    fill: #555555;
+  }
+
+  &-accessories {
+    width: 14px;
+    height: 24px;
+    fill: #555555;
+  }
+
+  &-bades {
+    width: 18px;
+    height: 24px;
+    fill: #555555;
+  }
+
+  &-minutiae {
+    width: 42px;
+    height: 22px;
+    fill: #555555;
+  }
+
+  &-child {
+    width: 23px;
+    height: 24px;
+    fill: #555555;
+  }
+
+  &-salmagundi {
+    width: 23px;
+    height: 22px;
+    fill: #555555;
+  }
+
+  &-sight {
+    width: 36px;
+    height: 28px;
+    fill: $base-font-color;
+  }
+
+  // app/elements/alimentation/
+  &-alimentation {
+    width: 19px;
+    height: 30px;
+    fill: $base-font-color;
+  }
+
+  &-man {
+    width: 11px;
+    height: 27px;
+    fill: $base-font-color;
+  }
+
+  &-children {
+    width: 15px;
+    height: 21px;
+    fill: $base-font-color;
+  }
+
+  &-close {
+    width: 14px;
+    height: 14px;
+    fill: $base-font-color;
+  }
+
+  &.user-icon {
+    width: 28px;
+    height: 28px;
+    background: url(img/icons/user-icon.png);
+  }
+
+  &.rus {
+    width: 18px;
+    height: 18px;
+    background: url(img/icons/rus.png);
+  }
+
+  &.eng {
+    width: 18px;
+    height: 18px;
+    background: url(img/icons/eng.png);
+  }
+
+  //budget
+
+  &-bus {
+    width: 24px;
+    height: 8px;
+    fill: #000000;
+  }
+
+  &-train {
+    width: 25px;
+    height: 10px;
+    fill: #000000;
+  }
+
+  &-flight {
+    width: 39px;
+    height: 28px;
+    fill: #2d2d2d;
+  }
+
+  &-housing {
+    width: 29px;
+    height: 30px;
+    fill: #2d2d2d;
+  }
+
+  &-down {
+    width: 8px;
+    height: 10px;
+    fill: #2d2d2d;
+  }
+
+  &.ryanair {
+    width: 43px;
+    height: 5px;
+    background: url(img/icons/ryanair.png);
+  }
+
+  &.wizz {
+    width: 21px;
+    height: 9px;
+    background: url(img/icons/wizz.png);
+  }
+
+  //tickets
+
+  &-cart {
+    width: 17px;
+    height: 15px;
+    fill: #707070;
+  }
+
+  &-pack {
+    width: 11px;
+    height: 18px;
+    fill: #707070;
+  }
+
+  &-right-arrow {
+    width: 15px;
+    height: 8px;
+    fill: #ffffff;
+  }
+
+  &-up {
+    width: 19px;
+    height: 8px;
+    fill: #c6c6c6;
+  }
+
+  &-slider-arrow {
+    width: 8px;
+    height: 19px;
+    fill: #2d2d2d;
+  }
+
+  &.ryanair-big {
+    width: 74px;
+    height: 8px;
+    background: url(img/icons/ryanair-big.png);
+  }
+
+  //app/elements/gallery
+  &-slider-next {
+    width: 15px;
+    height: 29px;
+    fill: #969696;
+  }
+
+  &-slider-prev {
+    width: 15px;
+    height: 29px;
+    fill: #969696;
+  }
+
+  // app/elements/housing/svg-icons
+  &-handle {
+    width: 35px;
+    height: 33px;
+    fill: #2d2d2d;
+  }
+
+  &-nameplate {
+    width: 35px;
+    height: 32px;
+    fill: #2d2d2d;
+  }
+
+  &-keys {
+    width: 35px;
+    height: 30px;
+    fill: #2d2d2d;
+  }
+
+  &-house {
+    width: 35px;
+    height: 30px;
+    fill: #2d2d2d;
+  }
+
+  &-house-two {
+    width: 35px;
+    height: 25px;
+    fill: #2d2d2d;
+  }
+
+  &-umbrella {
+    width: 35px;
+    height: 29px;
+    fill: #2d2d2d;
+  }
+
+  // app/elements/sight/svg-icons
+  &-position {
+    width: 11px;
+    height: 13px;
+    fill: $green;
+  }
+
+  &-clock {
+    width: 11px;
+    height: 11px;
+    stroke: #909090;
+  }
+
+  &-arrow-right {
+    width: 15px;
+    height: 29px;
+    stroke: #2d2d2d;
+  }
+
+  // app/elements/transport/svg-icons
+  &-auto {
+    width: 35px;
+    height: 21px;
+    stroke: #2d2d2d;
+  }
+
+  // app/elements/different-things/svg-icons
+  &-shopping {
+    width: 26px;
+    height: 30px;
+    stroke: #2d2d2d;
+  }
+
+  &-entertainment {
+    width: 29px;
+    height: 32px;
+    stroke: #2d2d2d;
+  }
+
+  &-different {
+    width: 35px;
+    height: 24px;
+    stroke: #2d2d2d;
+  }
+
+  &-check-mark {
+    width: 14px;
+    height: 15px;
+    fill: green;
+  }
+
+  // app/elements/gallery/svg-icons
+  &-likes {
+    width: 42px;
+    height: 46px;
+    fill: rgba(#4ac261, 0);
+    stroke: rgba(#4ac261, .4);
+    stroke-width: 15px;
+  }
+
+
+  &-deslikes {
+    width: 42px;
+    height: 46px;
+    fill: rgba(#d53838, 0);
+    stroke: rgba(#d53838, .4);
+    stroke-width: 15px;
+  }
+
+
+
+
+}

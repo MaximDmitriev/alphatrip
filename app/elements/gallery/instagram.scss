@@ -1,0 +1,62 @@
+.map-container {
+  position: relative;
+}
+
+.popup-instagram {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  color: #ffffff;
+  padding: 30px 15px;
+  border-radius: 3px;
+  background-color: rgba(#2d2d2d, .9);
+  z-index: 1000;
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 25px 0 0 0;
+  }
+
+  &__title-link {
+    color: #ff6e93;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 0 5px 0 0;
+  }
+
+  &__link {
+    color: #44d1ff;
+    padding: 0 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    max-width: 420px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin: 50px 0 0 0;
+
+    @media(max-width: 768px) {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  br {
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+}

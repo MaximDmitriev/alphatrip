@@ -1,0 +1,397 @@
+.gallery {
+  $root: &;
+  position: relative;
+  width: 100%;
+  max-width: 950px;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media(max-width: 768px) {
+    padding: 0;
+    border-radius: none;
+  }
+
+  &__close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+    @media(max-width: 768px) {
+      right: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .icon-cross {
+        fill: #fff;
+      }
+    }
+
+    .icon-cross {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__hotel-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  .swiper-container {
+    width: 100%;
+
+  }
+
+  &__thumbs {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+
+    @media(max-width: 480px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    flex: none;
+    outline: none;
+
+    @media(max-width: 768px) {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .swiper-slide {
+    #{$root} {
+      &__photo {
+        border: 3px solid transparent;
+        transition: .4s;
+      }
+    }
+  }
+
+  &__active-slide {
+    #{$root} {
+      &__photo {
+        border-color: #13b131 !important;
+      }
+    }
+  }
+
+  .swiper-button-disabled {
+    svg {
+      fill: #dfdfdf;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 405px;
+    background: $icon-color;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: .4s;
+
+    @media(max-width: 767px) {
+      width: 95%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: rgba($icon-color, .95);
+    }
+  }
+
+  &__btn-date {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  &__service-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 590px;
+    width: 100%;
+    margin: 35px 0 40px 0;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__filter-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 390px;
+    width: 100%;
+
+    @media(max-width: 768px) {
+      margin: 10px 0 0 0;
+    }
+
+    @media(max-width: 510px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 0 0 10px;
+    }
+  }
+
+  &__filter-reviews-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__filter-reviews-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 275px;
+    width: 100%;
+
+    @media(max-width: 510px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked {
+      +#{$root} {
+        &__label {
+          &_good {
+            background: #dcf3e0;
+          }
+
+          &_mean {
+            background: #ececec;
+          }
+
+          &_bad {
+            background: #fae4e4;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 84px;
+    height: 29px;
+    border-radius: 2px;
+
+    &_good {
+      color: #13b131;
+    }
+
+    &_mean {
+      color: #2d2d2d;
+    }
+
+    &_bad {
+      color: #d53535;
+    }
+  }
+
+  &__service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__rating {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 0 15px;
+  }
+
+  &-user-feedback {
+    max-width: 368px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+  }
+
+  &-user-feedback__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  &-user-feedback__result {
+    color: #13b131;
+    font-size: 16px;
+  }
+
+  &-user-feedback__descr {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+    margin: 20px 0 0 0;
+  }
+
+  &-user-feedback__minuses {
+    margin: 25px 0 0 0;
+  }
+
+  &-user-feedback__item:not(:first-child) {
+    margin: 10px 0 0 0;
+  }
+
+  .modal-airbnb {
+    width: 54px;
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#hotelGallery {
+  @media(max-width: 768px) {
+    .modal__content {
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
+#sightsGallery {
+  @media(max-width: 768px) {
+    .modal__content {
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
+#instagramGallery {
+  @media(max-width: 768px) {
+    .modal__content {
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
+[data-slider="thumbs"] {
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.swiperFeedback {
+  width: 90%;
+  position: relative;
+
+  @media(max-width: 768px) {
+    width: 95%;
+    margin: 0 0 30px 0;
+  }
+}
+
+[data-nav="feedback-prev-slide"],
+[data-nav="feedback-next-slide"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+
+  @media(max-width: 768px) {
+    display: flex;
+  }
+
+  @media(max-width: 510px) {
+    display: none;
+  }
+}
+
+[data-nav="feedback-next-slide"] {
+  right: -5%;
+
+  @media(max-width: 992px) {
+    right: 15%;
+  }
+
+  @media(max-width: 768px) {
+    right: 5%;
+  }
+}
+
+[data-nav="feedback-prev-slide"] {
+  left: -5%;
+
+  @media(max-width: 992px) {
+    left: 15%;
+  }
+
+  @media(max-width: 768px) {
+    left: 5%;
+  }
+}
+
+@import "sights-gallery";
+@import "instagram-gallery";
+@import "instagram";

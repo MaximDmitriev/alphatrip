@@ -1,0 +1,80 @@
+.budget.section
+    ._wrap.wrap
+        h2._title.base-title бюджет поездки
+        ._container
+            ._subtitle
+                +svg('flight')
+                ._subtitle-name.base-title.base-title_bold перелет
+            ._route
+                ._route-point
+                    ._route-point-icon.-start
+                        ._route-point-circle.-start
+                            +svg('plane', 'budget__route-svg')
+                        +svg('down')
+                    ._route-point-wrap
+                        ._route-point-data 10 фев,
+                            span._route-point-name Москва
+                        ._dots
+                        ._price 7 500
+                            span._money Р
+                    ._route-point-transport
+                        +svg('plane')
+                        +icon('ryanair', 'budget__transport-name')
+                ._route-point
+                    ._route-point-icon
+                        +svg('russia')
+                        +svg('down')
+                    ._route-point-wrap
+                        ._route-point-data 11 фев,
+                            span._route-point-name Будапешт
+                        ._dots
+                        ._price 11 500
+                            span._money Р
+                    ._route-point-transport
+                        +svg('plane')
+                        +icon('wizz', 'budget__transport-name')
+                ._route-point
+                    ._route-point-icon
+                        +svg('belarus')
+                        +svg('down')
+                    ._route-point-wrap
+                        ._route-point-data 13 фев,
+                            span._route-point-name Венеция
+                        ._dots
+                        ._price 9 500
+                            span._money Р
+                    ._route-point-transport
+                        +svg('train')
+                ._route-point
+                    ._route-point-icon
+                        +svg('russia')
+                        +svg('down')
+                    ._route-point-wrap
+                        ._route-point-data 15 фев,
+                            span._route-point-name Будапешт
+                        ._dots
+                        ._price 8 000
+                            span._money Р
+                    ._route-point-transport
+                        +svg('bus')
+                ._route-point
+                    ._route-point-icon.-end
+                        +svg('finish')
+                    ._route-point-wrap
+                        ._route-point-data 17 фев,
+                            span._route-point-name Москва
+                        ._dots
+                        ._price 7 500
+                            span._money Р
+                    ._route-point-transport
+                        +svg('plane')
+                        +icon('wizz', 'budget__transport-name')
+                ._route-point.-after
+                    ._route-point-circle
+                    ._route-point-data 18 фев,
+                        span._route-point-name Санкт-Петербург
+                ._total
+                    ._price.-total Всего: 22 500
+                        span._money.-total Р
+            
+

@@ -1,0 +1,281 @@
+.alimentation {
+  flex-direction: column;
+  $root: &;
+  width: 100%;
+  padding: 30px 67px 30px 61px;
+  background: #f5f5f5;
+
+  @media(max-width: 1054px) {
+    padding: 20px 30px 20px 20px;
+  }
+
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media(max-width: 509px) {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+
+    @media(max-width: 320px) {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  &__calories {
+    width: 42%;
+    max-width: 360px;
+    margin: 0 0 0 65px;
+
+    @media(max-width: 1054px) {
+      flex-basis: 48%;
+      margin-left: 20px;
+      max-width: 100%;
+    }
+
+    @media(max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__calories-item {
+    max-width: 335px;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin: 0 0 20px 0;
+    }
+
+    @media(max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__calories-item-title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__btn {
+    width: 56px;
+    height: 17px;
+    color: rgba(45, 45, 45, 0.6);
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(#bababa, .3);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media(max-width: 509px) {
+      width: 70px;
+      font-size: 8px;
+    }
+
+    &:hover {
+      background: darken(#bababa, 20%);
+    }
+  }
+
+  &__calories-number {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__calories-text {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__calories-min,
+  &__calories-max {
+    color: $font-color-light;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    width: 77px;
+    height: 28px;
+    color: $base-font-color;
+    padding: 0 9px;
+    font-size: 13px;
+    font-style: italic;
+    border-radius: 2px;
+    background-color: #ececec;
+    border: none;
+
+    @media(max-width: 509px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__descr {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  &__calories-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+
+    @media(max-width: 509px) {
+      margin-top: 0;
+    }
+  }
+
+  &__calories-text-measur {
+    text-transform: uppercase;
+    color: #bababa;
+    margin-left: 5px;
+  }
+
+  &__dashed-line {
+    border-bottom: 2px dashed #b0b0b0;
+    height: 1px;
+    margin: 25px 0 0 50px;
+
+    @media(max-width: 1054px) {
+      margin-left: 0;
+    }
+  }
+
+  &__statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1d6230;
+
+    @media(max-width: 1054px) {
+      padding-left: 0;
+    }
+
+    @media(max-width: 509px) {
+      font-size: 11px;
+    }
+
+  }
+
+  &__statistics-measure {
+    color: #9d9d9d;
+  }
+
+  &__statistics-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__statistics-number {
+    margin-left: 3px;
+  }
+
+  &__statistics-measure {
+    margin-left: 3px;
+    color: #1d6230;
+  }
+
+  &__expenses {
+    max-width: 355px;
+    width: 45%;
+
+    @media(max-width: 1054px) {
+      flex-basis: 44%;
+    }
+
+    @media(max-width: 767px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__city-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__city-name {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__city-mor-info {
+    width: 94px;
+    height: 17px;
+    border-radius: 2px;
+    border: none;
+    color: rgba(45, 45, 45, 0.6);
+    background-color: rgba(#bababa, .3);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      background: darken(#bababa, 20%);
+    }
+  }
+
+  &__city-measur {
+    flex-grow: 1;
+  }
+
+  &__box {
+    margin-right: 43px;
+
+    @media(max-width: 1054px) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.alimentation-icon-man {
+  position: absolute;
+  left: -20px;
+}
+
+.alimentation-icon {
+  margin-right: 25px;
+}

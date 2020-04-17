@@ -1,0 +1,109 @@
+.different-things
+  ._box
+    ._title.base-title
+      +svg('shopping', 'shopping-svg') 
+      | покупки
+    .list-info
+      .box-info 
+        +svg('close', 'box-info-close')
+        .box__text Бензин
+        .box__dasht
+        .box__number 100
+        .box__measure Р
+        +svg('edit', 'box-info-edit')
+
+      .box-info 
+        +svg('close', 'box-info-close')
+        .box__text Бензин
+        .box__dasht
+        .box__number 
+        .box__measure Неизвестно 
+        +svg('edit', 'box-info-edit')
+
+      .box-info 
+        +svg('close', 'box-info-close')
+        .box__text Бензин
+        .box__dasht
+        .box__number 100
+        .box__measure Р
+        +svg('edit', 'box-info-edit')
+
+
+    .measur-add-item
+      +svg('plus')
+      | добавить трату
+
+    .box-info_add 
+      +svg('close', 'box-info-close')
+      input(type="text" placeholder="Введите...").box__text
+      .box__dasht
+      input(type="text" placeholder="1000").box__number
+      .box__measure Р
+      +svg('check-mark', 'box-info-edit')
+
+    .dashed-line
+    .statistics
+      .statistics-info
+        .statistics-text Среднее в день:
+        .statistics-number 2 500
+        .statistics-measure Р
+      .statistics-info
+        .statistics-text Всего:
+        .statistics-number 2 500
+        .statistics-measure Р
+
+  ._box
+    ._title.base-title
+      +svg('entertainment', 'entertainment-svg')
+      | развлечения
+    .list-info
+    .measur-add-item
+      +svg('plus')
+      | добавить трату
+
+    .dashed-line
+    .statistics.-col
+      .statistics-info
+        .statistics-text Среднее в день:
+        .statistics-number 
+        .statistics-measure неизвестно 
+      .statistics-info
+        .statistics-text Всего:
+        .statistics-number 
+        .statistics-measure неизвестно 
+
+  ._box
+    ._title.base-title
+      +svg('different', 'different-svg')
+      | разное
+    .list-info
+      .box-info 
+        +svg('close', 'box-info-close')
+        .box__text Бензин
+        .box__dasht
+        .box__number 100
+        .box__measure Р
+        +svg('edit', 'box-info-edit')
+
+      .box-info 
+        +svg('close', 'box-info-close')
+        .box__text Бензин
+        .box__dasht
+        .box__number 
+        .box__measure Неизвестно 
+        +svg('edit', 'box-info-edit')
+
+    .measur-add-item
+      +svg('plus')
+      | добавить трату
+
+    .dashed-line
+    .statistics
+      .statistics-info
+        .statistics-text Среднее в день:
+        .statistics-number 2 500
+        .statistics-measure Р
+      .statistics-info
+        .statistics-text Всего:
+        .statistics-number 2 500
+        .statistics-measure Р

@@ -1,0 +1,320 @@
+@mixin flex-cen-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.housing {
+  background: #f5f5f5;
+
+  &__wrap {
+    align-items: center;
+    padding: 30px 0;
+
+    @media(max-width: 1200px) {
+      padding: 30px 20px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media(max-width: 509px) {
+      font-size: 15px;
+    }
+  }
+
+  &__content {
+    max-width: 780px;
+    width: 100%;
+  }
+
+  &__variables {
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 35px 0 0 0;
+    max-width: 780px;
+    width: 100%;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media(max-width: 510px) {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  &__city {
+    @include flex-cen-sb;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media(max-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+
+  &__box {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  &__city-descr {
+    @include flex-cen-sb;
+    width: 100%;
+    margin: 60px 0 0 0;
+
+    @media(max-width: 768px) {
+      margin: 20px 0 0 0;
+    }
+
+    &:first-child {
+      margin: 0;
+
+      @media(max-width: 768px) {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  &__date {
+    @include flex-cen-sb;
+    max-width: 190px;
+  }
+
+  &__hotel-descr {
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0 0 0;
+
+    @media(max-width: 510px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px 0 0 0;
+    }
+  }
+
+  &__date-num {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  &__btn {
+    width: 87px;
+    height: 17px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(#bababa, .2);
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(#2d2d2d, .6);
+    text-transform: uppercase;
+  }
+
+  &__hotel-name {
+    color: $icon-color;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      color: darken($icon-color, 10%);
+    }
+  }
+
+  &__dots {
+    flex-grow: 1;
+    height: 13px;
+    margin: 0px 3px;
+    border-bottom: 2px dotted rgb(171, 171, 171);
+
+    @media(max-width: 510px) {
+      width: 100%;
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &__price {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__money {
+    color: #9d9d9d;
+    margin-left: 5px;
+  }
+
+  &__amenities {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    max-width: 490px;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.housing-svg {
+  margin-right: 20px;
+
+}
+
+.flag-svg {
+  margin: 0 15px 0 0;
+}
+
+.system {
+  margin: 0 0 0 20px;
+
+  @media(max-width: 510px) {
+    margin: 5px 0 0 0;
+  }
+}
+
+.city-descr-svg {
+  margin-right: 20px;
+}
+
+.housing-amenities-svg {
+  fill: #7d7d7d;
+  position: relative;
+  z-index: -1;
+
+  &:hover {
+    fill: darken(#7d7d7d, 30%);
+  }
+}
+
+.housing-amenities {
+  position: relative;
+  margin: 0 21px 10px 0;
+
+  &:last-child {
+    margin: 0 0 10px 0;
+  }
+
+  &:hover:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #737373;
+    left: -1px;
+    bottom: -27px;
+    transform: rotate(136deg);
+  }
+
+  &:hover:after {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    background: #737373;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &_wifi {
+    &:hover:after {
+      content: 'WiFi';
+      z-index: 10;
+    }
+  }
+
+  &_kitchen {
+    &:hover:after {
+      content: 'Кухня';
+    }
+  }
+
+  &_conditioner {
+    &:hover:after {
+      content: 'Кондиционер';
+    }
+  }
+
+  &_safe {
+    &:hover:after {
+      content: 'Сейф';
+    }
+  }
+
+  &_heating {
+    &:hover:after {
+      content: 'Обогрев';
+    }
+  }
+
+  &_table {
+    &:hover:after {
+      content: 'Стол';
+    }
+  }
+
+  &_gymnasium {
+    &:hover:after {
+      content: 'Спорт зал';
+    }
+  }
+
+  &_washer {
+    &:hover:after {
+      content: 'Стир. машина';
+    }
+  }
+
+  &_flatiron {
+    &:hover:after {
+      content: 'Утюг';
+    }
+  }
+
+  &_refrigerator {
+    &:hover:after {
+      content: 'Холодильник';
+    }
+  }
+
+  &_hairdryer {
+    &:hover:after {
+      content: 'Фен';
+    }
+  }
+
+  &_tv {
+    &:hover:after {
+      content: 'Телевизор';
+    }
+  }
+
+  &_toiletries {
+    &:hover:after {
+      content: 'Предметы первой необходимости';
+      padding: 0 5px 0 5px;
+    }
+  }
+
+}

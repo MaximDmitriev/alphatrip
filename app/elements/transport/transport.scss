@@ -1,0 +1,259 @@
+.transport {
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 67px 40px 116px;
+  background: #f5f5f5;
+
+  .box__text_trans {
+    &:before {
+      display: none;
+    }
+  }
+
+  .box-info_trans {
+    font-size: 13px;
+
+    /* &:hover {
+      .position-svg {
+        opacity: 0;
+      }
+
+      .box-info-close-trans {
+        transform: translateX(15px);
+      }
+    } */
+  }
+
+  .box-info_add {
+    /* &:hover {
+      .position-svg {
+        opacity: 0;
+      }
+
+      .box-info-close-trans {
+        transform: translateX(15px);
+      }
+    } */
+  }
+
+  @media(max-width: 1057px) {
+    padding: 20px 30px 20px 20px;
+  }
+
+  &__type {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+
+  &__box {
+    margin-top: 15px;
+    width: 42%;
+    max-width: 370px;
+
+    &_info {
+      width: 100%;
+      padding-left: 14px;
+    }
+
+    @media(max-width: 768px) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__citys {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__city-list {
+    padding: 0 0 0 13px;
+  }
+
+  &__city-info {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+
+    &:hover {
+
+      &>.box-info-close,
+      &>.box-info-edit {
+        opacity: 1;
+      }
+
+      &>.box__text {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+
+    &_bf-none {
+      display: flex;
+      align-items: center;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      left: -10px;
+      top: 5px;
+      background: #13b131;
+    }
+  }
+
+  &__number {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2d2d2d;
+
+    &_unknown {
+      color: #9d9d9d;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-left: 2px;
+    }
+  }
+
+  &__measure {
+    font-size: 13px;
+    color: $font-color-light;
+    margin-left: 3px;
+    text-transform: uppercase;
+  }
+
+  &__dasht {
+    flex-grow: 1;
+    border-bottom: 1px dashed #b0b0b0;
+    margin-bottom: 2px;
+  }
+
+  &__label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 33px;
+  }
+
+  .transport__label {
+    &::before {
+      content: "\2713";
+      color: transparent;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      margin: -2px 5px 0 0;
+      margin-right: 9px;
+      text-align: center;
+      vertical-align: middle;
+      transition: color ease .3s;
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #c7c7c7;
+      background-color: #f5f5f5;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked {
+      +.transport__label::before {
+        color: #2d2d2d;
+      }
+    }
+  }
+
+  &__city-name {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__info-text {
+    color: $font-color-light;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+
+  }
+
+  &__dashed-line {
+    border-bottom: 2px dashed #b0b0b0;
+    height: 1px;
+  }
+
+  &__statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0e5823;
+
+    @media(max-width: 509px) {
+      font-size: 11px;
+    }
+
+  }
+
+  &__statistics-measure {
+    color: #9d9d9d;
+  }
+
+  &__statistics-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__statistics-number {
+    margin-left: 3px;
+  }
+
+  &__statistics-measure {
+    margin-left: 3px;
+    color: #0e5823;
+  }
+}
+
+.transport-edit {
+  width: 25px;
+  fill: #a6a6a6;
+}
+
+.auto-svg {
+  margin: 0 25px 0 0;
+}
